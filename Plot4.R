@@ -24,9 +24,9 @@ with(data.use, {
         plot(date, sm1, type = "l", xlab = "", ylab = "Energy sub metering")
         lines(date, sm2, type = "l", col = "red")
         lines(date, sm3, type = "l", col = "blue")
-        legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1, lwd=2.5, col=c("black", "red", "blue"))
+        legend("topright", inset = 0.05, bty = "n", c("Sub met. 1", "Sub_met. 2", "Sub_met. 3"), lty=1, lwd=1, cex = 0.5, y.intersp = 0.5, col=c("black", "red", "blue"))
 
-        plot(date, grpow, type = "l", xlab = "", ylab = "Global_Reactive_Power")
+        plot(date, grpow, type = "l", xlab = "", ylab = "Global Reactive Power")
         
 })
 
